@@ -10,8 +10,6 @@ def main():
     
     if args.auto:
         raise Exception("Auto mode is still under development.")
-    if os.environ["OPENAI_API_KEY"] is None:
-        raise Exception("Please set OPENAI_API_KEY in your environment variables.")
     actor = GPTV_Actor()
     actor.start(args.start_link, args.auto)
 

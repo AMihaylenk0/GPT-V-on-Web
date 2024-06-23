@@ -4,6 +4,7 @@ import os
 from webai.browser import Browser
 import webai.prompt_lib as prompt_lib
 
+openai.api_key = 'sk-proj-LWsKvjYK2QDq21xbwWI6T3BlbkFJUoNVGZe1LPPJtrMlqfpj'
 class GPTV_Actor:
     def __init__(self):
         self.client = openai.Client()
